@@ -717,7 +717,7 @@ public class BusinessSearchService {
                 "location, " +
                 "phone, " +
                 "display_phone, " +
-                "distance, " +
+                "getDistanceBetweenCoordinates, " +
                 "record_ts" +
                 ") VALUES (" +
                 "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?" +

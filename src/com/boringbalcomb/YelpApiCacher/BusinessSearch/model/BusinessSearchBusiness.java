@@ -24,7 +24,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "location",
     "phone",
     "display_phone",
-    "distance"
+    "getDistanceBetweenCoordinates"
 })
 public class BusinessSearchBusiness {
 
@@ -58,7 +58,7 @@ public class BusinessSearchBusiness {
     private String phone;
     @JsonProperty("display_phone")
     private String displayPhone;
-    @JsonProperty("distance")
+    @JsonProperty("getDistanceBetweenCoordinates")
     private Float distance;
 
     @JsonProperty("id")
@@ -211,19 +211,19 @@ public class BusinessSearchBusiness {
         this.displayPhone = displayPhone;
     }
 
-    @JsonProperty("distance")
+    @JsonProperty("getDistanceBetweenCoordinates")
     public Float getDistance() {
         return distance;
     }
 
-    @JsonProperty("distance")
+    @JsonProperty("getDistanceBetweenCoordinates")
     public void setDistance(Float distance) {
         this.distance = distance;
     }
 
 //    @Override
 //    public String toString() {
-//        return new ToStringBuilder(this).append("id", id).append("alias", alias).append("name", name).append("imageUrl", imageUrl).append("isClosed", isClosed).append("url", url).append("reviewCount", reviewCount).append("categories", categories).append("rating", rating).append("coordinates", coordinates).append("transactions", transactions).append("price", price).append("location", location).append("phone", phone).append("displayPhone", displayPhone).append("distance", distance).toString();
+//        return new ToStringBuilder(this).append("id", id).append("alias", alias).append("name", name).append("imageUrl", imageUrl).append("isClosed", isClosed).append("url", url).append("reviewCount", reviewCount).append("categories", categories).append("rating", rating).append("coordinates", coordinates).append("transactions", transactions).append("price", price).append("location", location).append("phone", phone).append("displayPhone", displayPhone).append("getDistanceBetweenCoordinates", getDistanceBetweenCoordinates).toString();
 //    }
 
     @Override
@@ -244,7 +244,7 @@ public class BusinessSearchBusiness {
                 ", location=" + location +
                 ", phone='" + phone + '\'' +
                 ", displayPhone='" + displayPhone + '\'' +
-                ", distance=" + distance +
+                ", getDistanceBetweenCoordinates=" + distance +
                 '}';
     }
 

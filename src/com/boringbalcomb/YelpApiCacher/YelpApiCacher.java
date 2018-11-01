@@ -52,7 +52,7 @@ public class YelpApiCacher {
             }
         }
         MYSQL_CONNECTION_STRING = MYSQL_URL + "&user=" + MYSQL_USERNAME + "&password=" + MYSQL_PASSWORD;
-        
+
         // //////////////////// //
         // END: Configuration //
         // //////////////////// //
