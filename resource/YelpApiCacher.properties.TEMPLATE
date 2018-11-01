@@ -1,0 +1,6 @@
+# suppress inspection "SpellCheckingInspection" for whole file
+yelp.api.key=
+jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/yelp_api_cacher?useSSL=false
+jdbc.user=
+jdbc.password=

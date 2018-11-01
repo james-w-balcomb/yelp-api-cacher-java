@@ -1,0 +1,72 @@
+
+package com.boringbalcomb.YelpApiCacher.BusinessDetails.model;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+// import org.apache.commons.lang.builder.ToStringBuilder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+    "code",
+    "description",
+    "field",
+    "instance"
+})
+public class BusinessDetailsError {
+
+    @JsonProperty("code")
+    private String code;
+    @JsonProperty("description")
+    private String description;
+    @JsonProperty("field")
+    private String field;
+    @JsonProperty("instance")
+    private String instance;
+
+    @JsonProperty("code")
+    public String getCode() {
+        return code;
+    }
+
+    @JsonProperty("description")
+    public String getDescription() {
+        return description;
+    }
+
+    @JsonProperty("field")
+    public String getField() {
+        return field;
+    }
+
+    @JsonProperty("instance")
+    public String getInstance() {
+        return instance;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setField(String field) {
+        this.field = field;
+    }
+
+    public void setInstance(String instance) {
+        this.instance = instance;
+    }
+
+    @Override
+    public String toString() {
+        return "BusinessSearchError{" +
+                "code='" + code + '\'' +
+                ", description='" + description + '\'' +
+                ", field='" + field + '\'' +
+                ", instance='" + instance + '\'' +
+                '}';
+    }
+}
