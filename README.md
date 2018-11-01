@@ -1,2 +1,2 @@
-# yelp-api-cacher-java
+# Yelp API Cacher
 Caching Utility for the Yelp API
